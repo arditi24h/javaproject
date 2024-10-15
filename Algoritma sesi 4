@@ -1,0 +1,127 @@
+TUGAS 1
+import java.util.Scanner;
+
+public class Bintang {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("===== Perulangan Bintang ===== ");
+        System.out.print("Masukan jumlah baris : ");
+        int baris = scanner.nextInt();
+
+        for(int i = 0; i < baris; i++) {
+            for(int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
+
+
+TUGAS 2.
+
+public class LoopAnggkaV1 {
+    public static void main(String[] args) {
+        int start = 1;
+        for (int a = 1; a <= 4; a++) {
+            int jumlahAngka;
+            if (a == 3) {
+                jumlahAngka = 4;
+            } else{
+                jumlahAngka = 5;
+            }
+            for (int b = 1; b <= jumlahAngka; b++) {
+                if (start == 6 || start == 12 || start == 17) {
+                    start++;
+                }
+                System.out.print(start + " ");
+                start++;
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+
+TUGAS 3.
+public class LoopAnggkaV2 {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 20;
+
+        for (int i = 0; i < 1; i++) { 
+            for (int j = 0; j < 5; j++) {
+                System.out.print(a + " ");
+                a++; 
+            }
+            System.out.println(); 
+        }
+
+        for (int i = 0; i < 1; i++) { 
+            for (int j = 0; j < 5; j++) {
+                System.out.print(b + " "); 
+                b--; 
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < 1; i++) { 
+            for (int j = 0; j < 5; j++) {
+                System.out.print(a + " ");
+                a++; 
+            }
+            System.out.println(); 
+        }
+
+        for (int i = 0; i < 1; i++) { 
+            for (int j = 0; j < 5; j++) {
+                System.out.print(b + " "); 
+                b--; 
+            }
+            System.out.println();
+        }
+        
+        System.out.println("==========");
+    }
+}
+
+
+
+TUGAS 4.
+
+public class LoopAnggkaV3 {
+    public static void main(String[] args) {
+        for(int x = 0; x < 4; x++){
+            for(int y = 0; y < 5; y++){
+                if ((x + y) % 2 == 0) {
+                    System.out.print("-1 "); 
+                } else {
+                    System.out.print(" 0 "); 
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+TUGAS 5.
+
+public class LoopAnggkaV4 {
+    public static void main(String[] args) {
+        for (int i = 0; i <= 3; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+            if (i > 0) {
+                for (int j = 0; j < i; j++) {
+                    System.out.print(j + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
